@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>client_credentials</grant_type>
+        <jwt_provider/>
+        <name>GraphApi default_profile</name>
+        <oauth_entity display_value="GraphApi">e62d63b193a742107ea47fbcebba10e9</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 07:56:27</sys_created_on>
+        <sys_id>cdfd63f193a742107ea47fbcebba1037</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GraphApi default_profile</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>oauth_entity_profile_cdfd63f193a742107ea47fbcebba1037</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 07:56:27</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>oauth_entity_profile_cdfd63f193a742107ea47fbcebba1037</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>client_credentials</grant_type><jwt_provider/><name>GraphApi default_profile</name><oauth_entity display_value="GraphApi">e62d63b193a742107ea47fbcebba10e9</oauth_entity><saml2_assertion_producer/><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-23 07:56:27</sys_created_on><sys_id>cdfd63f193a742107ea47fbcebba1037</sys_id><sys_mod_count>0</sys_mod_count><sys_name>GraphApi default_profile</sys_name><sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package><sys_policy/><sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope><sys_update_name>oauth_entity_profile_cdfd63f193a742107ea47fbcebba1037</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-23 07:56:27</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>-2142529495</payload_hash>
+        <record_name>GraphApi default_profile</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 07:56:27</sys_created_on>
+        <sys_id>49fd63f193a742107ea47fbcebba103a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190de9779f80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 07:56:27</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>0dfd63f163a74210b547cda8c1fb4c39</update_guid>
+        <update_guid_history>0dfd63f163a74210b547cda8c1fb4c39:-2142529495</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="GraphApi default_profile">30a38c0a932b42107ea47fbcebba1071</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:31:11</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>cbb69188d55941ef990ef88b7ca4e0d1</sys_id>
+        <sys_metadata>cdfd63f193a742107ea47fbcebba1037</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GraphApi default_profile</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_cdfd63f193a742107ea47fbcebba1037</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_cdfd63f193a742107ea47fbcebba1037">49fd63f193a742107ea47fbcebba103a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:31:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

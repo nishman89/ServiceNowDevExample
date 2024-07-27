@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 00:00:00</entered_time>
+        <max_drift/>
+        <name>Loaner Item Pick Up</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2024-07-22 17:05:00</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[var pickUpLeadTime = gs.getProperty('x_cdltd_loaner_req.pickup.leadtime', 24) * 60 * 60 * 1000;
+var noticeTime = new GlideDateTime();
+noticeTime.add(pickUpLeadTime);
+// The above block ensures the GlideRecord query finds the records that are due up in the span specified by the leadtime property
+
+var gr = new GlideRecord('x_cdltd_loaner_req_loaner_request');
+gr.addQuery('state', 16);
+gr.addQuery('pick_up_reminder', '');
+gr.addQuery('start_date', '<=', noticeTime);
+gr.query();
+// the above GR query looks for LNR records which:
+// (1) are in state "Ready for Pickup"
+// (2) haven't already generated a reminder
+// (3) are within the acceptable span for pickup
+
+var rightNow = new GlideDateTime();
+
+while (gr.next()) {
+    gr.pick_up_reminder = rightNow; 
+	// update each LNR so we don't spam the requesters (see line 9, above)
+    gr.update();
+    gs.eventQueue('x_cdltd_loaner_req.pickUp', gr, gr.number, gs.getUserName()); 
+	// fire the event to trigger the email notification!
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-22 17:05:27</sys_created_on>
+        <sys_id>22e1e8b993a702107ea47fbcebba108d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loaner Item Pick Up</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sysauto_script_22e1e8b993a702107ea47fbcebba108d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-22 17:05:27</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

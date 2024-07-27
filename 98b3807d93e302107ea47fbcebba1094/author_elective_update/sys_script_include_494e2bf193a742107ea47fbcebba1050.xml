@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1105087_loaner_r.GraphClientCredentials</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>GraphClientCredentials</name>
+        <script><![CDATA[var GraphClientCredentials = Class.create();
+GraphClientCredentials.prototype = {
+    initialize: function() {
+        var requestBody = "client_id=" + clientId +
+            "&scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" +
+            "&client_secret=" + clientSecret +
+            "&grant_type=client_credentials";
+
+        var tokenRequest = new sn_ws.RESTMessageV2("GraphApi - Token request", "POST");
+        tokenRequest.setEndpoint(tokenEndpoint);
+        tokenRequest.setRequestHeader("Content-Type", "application/x-www-urlencoded");
+        tokenRequest.setRequestBody(requestBody);
+    },
+    type: 'GraphClientCredentials'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 08:05:33</sys_created_on>
+        <sys_id>494e2bf193a742107ea47fbcebba1050</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>GraphClientCredentials</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sys_script_include_494e2bf193a742107ea47fbcebba1050</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:32:32</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>sys_script_include_494e2bf193a742107ea47fbcebba1050</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1105087_loaner_r.GraphClientCredentials&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;GraphClientCredentials&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var GraphClientCredentials = Class.create();
+GraphClientCredentials.prototype = {
+    initialize: function() {
+        var requestBody = "client_id=" + clientId +
+            "&amp;scope=https%3A%2F%2Fgraph.microsoft.com%2F.default" +
+            "&amp;client_secret=" + clientSecret +
+            "&amp;grant_type=client_credentials";
+
+        var tokenRequest = new sn_ws.RESTMessageV2("GraphApi - Token request", "POST");
+        tokenRequest.setEndpoint(tokenEndpoint);
+        tokenRequest.setRequestHeader("Content-Type", "application/x-www-urlencoded");
+        tokenRequest.setRequestBody(requestBody);
+    },
+    type: 'GraphClientCredentials'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-23 08:05:33&lt;/sys_created_on&gt;&lt;sys_id&gt;494e2bf193a742107ea47fbcebba1050&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;GraphClientCredentials&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Request" source="x_1105087_loaner_r"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Loaner Request"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_494e2bf193a742107ea47fbcebba1050&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-23 09:32:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1259640729</payload_hash>
+        <record_name>GraphClientCredentials</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:32:32</sys_created_on>
+        <sys_id>acf3044a932b42107ea47fbcebba10ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190deef71070000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:32:32</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>e8f3cc86572b42107b0a6228d703ed9f</update_guid>
+        <update_guid_history>e8f3cc86572b42107b0a6228d703ed9f:-1259640729,c60a3bb1c9e74210b9abcb815d7024e7:1359002507,2c98fb311ee74210e0462bc51bbeedc0:1698687322,85963b3de7a74210bba7f296aa8dbd26:1616458585,ae00b771dfa74210cab6667fba8720bc:608405637</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:51:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>76cfd97064424fce825c55e4a4e9d844</sys_id>
+        <sys_metadata>494e2bf193a742107ea47fbcebba1050</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GraphClientCredentials</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>sys_script_include_494e2bf193a742107ea47fbcebba1050</sys_update_name>
+        <sys_update_version display_value="sys_script_include_494e2bf193a742107ea47fbcebba1050">acf3044a932b42107ea47fbcebba10ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:51:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

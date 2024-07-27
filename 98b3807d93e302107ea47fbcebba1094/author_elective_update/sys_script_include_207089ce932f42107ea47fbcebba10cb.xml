@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1105087_loaner_r.MicrosoftTHingy</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MicrosoftTHingy</name>
+        <script><![CDATA[var MicrosoftTHingy = Class.create();
+MicrosoftTHingy.prototype = {
+    initialize: function() {
+    },
+
+    type: 'MicrosoftTHingy'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:57:04</sys_created_on>
+        <sys_id>207089ce932f42107ea47fbcebba10cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MicrosoftTHingy</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sys_script_include_207089ce932f42107ea47fbcebba10cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:57:04</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>sys_script_include_207089ce932f42107ea47fbcebba10cb</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1105087_loaner_r.MicrosoftTHingy&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MicrosoftTHingy&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var MicrosoftTHingy = Class.create();
+MicrosoftTHingy.prototype = {
+    initialize: function() {
+    },
+
+    type: 'MicrosoftTHingy'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-23 13:57:04&lt;/sys_created_on&gt;&lt;sys_id&gt;207089ce932f42107ea47fbcebba10cb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;MicrosoftTHingy&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Request" source="x_1105087_loaner_r"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Loaner Request"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_207089ce932f42107ea47fbcebba10cb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-23 13:57:04&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>14788658</payload_hash>
+        <record_name>MicrosoftTHingy</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:57:05</sys_created_on>
+        <sys_id>3f704d06936f42107ea47fbcebba1083</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190dfe1a3b90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:57:05</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>b370c5063f6f421026493b31bc4daff9</update_guid>
+        <update_guid_history>b370c5063f6f421026493b31bc4daff9:14788658</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 14:26:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>235269c98d8248b4ad807658773ae790</sys_id>
+        <sys_metadata>207089ce932f42107ea47fbcebba10cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MicrosoftTHingy</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>sys_script_include_207089ce932f42107ea47fbcebba10cb</sys_update_name>
+        <sys_update_version display_value="sys_script_include_207089ce932f42107ea47fbcebba10cb">3f704d06936f42107ea47fbcebba1083</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 14:26:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

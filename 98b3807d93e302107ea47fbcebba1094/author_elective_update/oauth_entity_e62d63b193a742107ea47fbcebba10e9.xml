@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="DELETE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth/v2.0/authorize</auth_url>
+        <certificate_url/>
+        <client_id>1173dfa2-f7ef-42c7-9013-5993948c5d17</client_id>
+        <client_secret>﷞﷟﷒52f82365936702107ea47fbcebba1051﷬﷔1﷬﷭XP9z7NYBv9OwPJP6Z18WNw==NKmrpyovo4bJ2jgASzBuTHQe2fawnYnDwpaM91iHMYOnFf9wNcNuXKMuYQXT4JObuJ74yi_0JiI=﷮﷯</client_secret>
+        <client_uuid>662d63b193a742107ea47fbcebba10e9</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>GraphApi</name>
+        <oauth_api_script display_value="Microsoft_ACCESS_TOKEN">494e2bf193a742107ea47fbcebba1050</oauth_api_script>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev267492.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 07:56:27</sys_created_on>
+        <sys_id>e62d63b193a742107ea47fbcebba10e9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GraphApi</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>oauth_entity_e62d63b193a742107ea47fbcebba10e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 08:05:36</sys_updated_on>
+        <token_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth/v2.0/token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>oauth_entity_e62d63b193a742107ea47fbcebba10e9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity"><oauth_entity action="INSERT_OR_UPDATE"><access>public</access><access_token_lifespan>1800</access_token_lifespan><active>true</active><auth_code_lifespan>0</auth_code_lifespan><auth_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth/v2.0/authorize</auth_url><certificate_url/><client_id>1173dfa2-f7ef-42c7-9013-5993948c5d17</client_id><client_secret>﷞﷟﷒52f82365936702107ea47fbcebba1051﷬﷔1﷬﷭XP9z7NYBv9OwPJP6Z18WNw==NKmrpyovo4bJ2jgASzBuTHQe2fawnYnDwpaM91iHMYOnFf9wNcNuXKMuYQXT4JObuJ74yi_0JiI=﷮﷯</client_secret><client_uuid>662d63b193a742107ea47fbcebba10e9</client_uuid><code_challenge_method>S256</code_challenge_method><comments/><default_grant_type>client_credentials</default_grant_type><id_token_lifespan>0</id_token_lifespan><jwt_provider/><login_url/><logo_url/><message_signature_lifespan>0</message_signature_lifespan><mobile_client>false</mobile_client><name>GraphApi</name><oauth_api_script display_value="Microsoft_ACCESS_TOKEN">494e2bf193a742107ea47fbcebba1050</oauth_api_script><protocol_name/><public_client>false</public_client><redirect_url>https://dev267492.service-now.com/oauth_redirect.do</redirect_url><refresh_token_lifespan>8640000</refresh_token_lifespan><refresh_token_url/><restricted_binding>false</restricted_binding><revoke_token_url/><salt>0</salt><send_client_credentials_as>request_body_parameter</send_client_credentials_as><skip_authorize>false</skip_authorize><sys_class_name>oauth_entity</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-23 07:56:27</sys_created_on><sys_id>e62d63b193a742107ea47fbcebba10e9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>GraphApi</sys_name><sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package><sys_policy/><sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope><sys_update_name>oauth_entity_e62d63b193a742107ea47fbcebba10e9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-23 08:05:36</sys_updated_on><token_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth/v2.0/token</token_url><type>oauth_provider</type><use_mutual_auth>false</use_mutual_auth><user/></oauth_entity></record_update>]]></payload>
+        <payload_hash>-1753368755</payload_hash>
+        <record_name>GraphApi</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 08:05:36</sys_created_on>
+        <sys_id>1b003f7593a742107ea47fbcebba1008</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190de9fdbb70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 08:05:36</sys_updated_on>
+        <type>Application Registries</type>
+        <update_guid>df003f7555a742101318d036bc7c4f07</update_guid>
+        <update_guid_history>df003f7555a742101318d036bc7c4f07:-1753368755,49fd63f106a74210d88c49b3ae3b723b:-526863094</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="GraphApi">74a340ce93e742107ea47fbcebba108c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:31:12</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity">oauth_entity</sys_db_object>
+        <sys_id>0a3c98daf0c846008070697722411000</sys_id>
+        <sys_metadata>e62d63b193a742107ea47fbcebba10e9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GraphApi</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>oauth_entity_e62d63b193a742107ea47fbcebba10e9</sys_update_name>
+        <sys_update_version display_value="oauth_entity_e62d63b193a742107ea47fbcebba10e9">1b003f7593a742107ea47fbcebba1008</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:31:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

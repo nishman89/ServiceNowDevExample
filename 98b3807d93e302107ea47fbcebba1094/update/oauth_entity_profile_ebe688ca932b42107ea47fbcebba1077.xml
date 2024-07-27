@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="INSERT_OR_UPDATE">
+        <default>false</default>
+        <grant_type>client_credentials</grant_type>
+        <jwt_provider/>
+        <name>GraphApi</name>
+        <oauth_entity display_value="Microsoft">20024c86932b42107ea47fbcebba1070</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:45:44</sys_created_on>
+        <sys_id>ebe688ca932b42107ea47fbcebba1077</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>GraphApi</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>oauth_entity_profile_ebe688ca932b42107ea47fbcebba1077</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:58:31</sys_updated_on>
+    </oauth_entity_profile>
+</record_update>

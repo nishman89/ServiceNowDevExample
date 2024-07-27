@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1105087_loaner_r.MicrosoftTokenHandler</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MicrosoftTokenHandler</name>
+        <script><![CDATA[var MicrosoftTokenHandler = Class.create();
+MicrosoftTokenHandler.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	isAccessTokenAvailable: function() {
+		// Create an output tag called result
+		var result = this.newItem('result');
+		
+		// Get from the parameters
+		var requestor = this.getParameter('requestor');
+		var personal = this.getParameter('personal');
+		var oauth_provider_profile_id = this.getParameter('oauth_provider_profile_id');
+		
+		var oAuthClient = new  sn_auth.GlideOAuthClient();
+
+		if (personal != null && personal.toLowerCase() == 'true') {
+			oAuthClient.setPersonal(true);
+		}
+
+		var token = oAuthClient.getToken(requestor, oauth_provider_profile_id);
+		
+		if (token) {
+			if(token.getAccessToken()) {
+				gs.log('OAuth Access token is available, requestor=' + requestor + ', oauth_profile_id=' + oauth_provider_profile_id);
+				result.setAttribute('isToken', 'true');
+				result.setAttribute('tokenExpiresInSecs', token.getExpiresIn());
+				var tokenExpiresInMs = new GlideTime(token.getExpiresIn() * 1000);
+				var tokenExpiresOnDate = new GlideDateTime();
+				tokenExpiresOnDate.add(tokenExpiresInMs);
+				result.setAttribute('tokenExpiresOnDate', tokenExpiresOnDate.getDisplayValue());
+			} else {
+				result.setAttribute('isToken', 'false');
+			}
+			
+			if (token.getRefreshToken()) {
+				gs.log('OAuth Refresh token is available, requestor=' + requestor + ', oauth_profile_id=' + oauth_provider_profile_id);
+				result.setAttribute('isRefreshToken', 'true');
+				result.setAttribute('refreshTokenExpiresInSecs', token.getRefreshTokenExpiresIn());
+				
+				var refreshExpiresInMs = new GlideTime(token.getRefreshTokenExpiresIn() * 1000);
+				var refreshExpiresOnDate = new GlideDateTime();
+				refreshExpiresOnDate.add(refreshExpiresInMs);
+				result.setAttribute('refreshTokenExpiresOnDate', refreshExpiresOnDate.getDisplayValue());
+			} else {
+				result.setAttribute('isRefreshToken', 'false');
+			}
+		} else {
+			result.setAttribute('isToken', 'false');
+			result.setAttribute('isRefreshToken', 'false');
+		}
+	},
+	
+	type: 'MicrosoftTokenHandler'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 14:26:47</sys_created_on>
+        <sys_id>81378506936f42107ea47fbcebba10db</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MicrosoftTokenHandler</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sys_script_include_81378506936f42107ea47fbcebba10db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 14:35:03</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>sys_script_include_81378506936f42107ea47fbcebba10db</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1105087_loaner_r.MicrosoftTokenHandler&lt;/api_name&gt;&lt;caller_access&gt;1&lt;/caller_access&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MicrosoftTokenHandler&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var MicrosoftTokenHandler = Class.create();
+MicrosoftTokenHandler.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	isAccessTokenAvailable: function() {
+		// Create an output tag called result
+		var result = this.newItem('result');
+		
+		// Get from the parameters
+		var requestor = this.getParameter('requestor');
+		var personal = this.getParameter('personal');
+		var oauth_provider_profile_id = this.getParameter('oauth_provider_profile_id');
+		
+		var oAuthClient = new  sn_auth.GlideOAuthClient();
+
+		if (personal != null &amp;&amp; personal.toLowerCase() == 'true') {
+			oAuthClient.setPersonal(true);
+		}
+
+		var token = oAuthClient.getToken(requestor, oauth_provider_profile_id);
+		
+		if (token) {
+			if(token.getAccessToken()) {
+				gs.log('OAuth Access token is available, requestor=' + requestor + ', oauth_profile_id=' + oauth_provider_profile_id);
+				result.setAttribute('isToken', 'true');
+				result.setAttribute('tokenExpiresInSecs', token.getExpiresIn());
+				var tokenExpiresInMs = new GlideTime(token.getExpiresIn() * 1000);
+				var tokenExpiresOnDate = new GlideDateTime();
+				tokenExpiresOnDate.add(tokenExpiresInMs);
+				result.setAttribute('tokenExpiresOnDate', tokenExpiresOnDate.getDisplayValue());
+			} else {
+				result.setAttribute('isToken', 'false');
+			}
+			
+			if (token.getRefreshToken()) {
+				gs.log('OAuth Refresh token is available, requestor=' + requestor + ', oauth_profile_id=' + oauth_provider_profile_id);
+				result.setAttribute('isRefreshToken', 'true');
+				result.setAttribute('refreshTokenExpiresInSecs', token.getRefreshTokenExpiresIn());
+				
+				var refreshExpiresInMs = new GlideTime(token.getRefreshTokenExpiresIn() * 1000);
+				var refreshExpiresOnDate = new GlideDateTime();
+				refreshExpiresOnDate.add(refreshExpiresInMs);
+				result.setAttribute('refreshTokenExpiresOnDate', refreshExpiresOnDate.getDisplayValue());
+			} else {
+				result.setAttribute('isRefreshToken', 'false');
+			}
+		} else {
+			result.setAttribute('isToken', 'false');
+			result.setAttribute('isRefreshToken', 'false');
+		}
+	},
+	
+	type: 'MicrosoftTokenHandler'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-23 14:26:47&lt;/sys_created_on&gt;&lt;sys_id&gt;81378506936f42107ea47fbcebba10db&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;MicrosoftTokenHandler&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Request" source="x_1105087_loaner_r"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Loaner Request"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_81378506936f42107ea47fbcebba10db&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-23 14:35:03&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1559816835</payload_hash>
+        <record_name>MicrosoftTokenHandler</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 14:35:04</sys_created_on>
+        <sys_id>8439c5ce936f42107ea47fbcebba10a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190e0046a100000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 14:35:04</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>4c39c5ce536f4210091c5928494fa0a2</update_guid>
+        <update_guid_history>4c39c5ce536f4210091c5928494fa0a2:-1559816835,65b7094efa6f4210051a2284e92e4761:-1773198003,7e47c14eef6f42104a68e586b6578f2c:1417776173</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 14:48:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>3916b9ac15f14461b393808bf28da169</sys_id>
+        <sys_metadata>81378506936f42107ea47fbcebba10db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MicrosoftTokenHandler</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>sys_script_include_81378506936f42107ea47fbcebba10db</sys_update_name>
+        <sys_update_version display_value="sys_script_include_81378506936f42107ea47fbcebba10db">8439c5ce936f42107ea47fbcebba10a3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 14:48:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

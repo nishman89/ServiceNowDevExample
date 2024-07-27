@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="15344c7d93e302107ea47fbcebba101b" extends="task" label="Loaner Request" max_length="40" name="x_1105087_loaner_r_loaner_request" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Location to be used" max_length="40" name="location_to_be_used" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="End date" mandatory="true" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="cmdb_ci_computer" label="Item type" max_length="40" name="item_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Mobile Phone" sequence="1" value="cmdb_ci_mobile_device"/>
+                <element inactive_on_update="false" label="Projector" sequence="2" value="cmdb_ci_projector"/>
+                <element inactive_on_update="false" label="Laptop" sequence="0" value="cmdb_ci_computer"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="sa" label="Depot" max_length="40" name="depot" type="string">
+            <choice>
+                <element inactive_on_update="false" label="London" sequence="1" value="london"/>
+                <element inactive_on_update="false" label="Buenos Aires" sequence="2" value="ba"/>
+                <element inactive_on_update="false" label="Santa Clara" sequence="3" value="sa"/>
+                <element inactive_on_update="false" label="Singapore" sequence="4" value="singapore"/>
+                <element inactive_on_update="false" label="Sydney" sequence="5" value="sydney"/>
+                <element inactive_on_update="false" label="Other" sequence="6" value="other"/>
+                <element inactive_on_update="false" label="New York" sequence="0" value="ny"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Pick up reminder" max_length="40" name="pick_up_reminder" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Requested for" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+    </element>
+</database>

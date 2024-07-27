@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1105087_loaner_r.MicrosoftTokenHandler</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MicrosoftTokenHandler</name>
+        <script><![CDATA[var MicrosoftTokenHandler = Class.create();
+MicrosoftTokenHandler.prototype = {
+    initialize: function() {
+    },
+	
+    interceptRequestParameters: function(requestParamMap) {
+        // try {
+        //     // Build here
+        //     requestParamMap.Put(token);
+
+        //     // Orig
+		// 	var thumbPrint = "<<Insert thumbprint here>>";
+        //     var header = {
+        //         "x5t": thumbPrint
+        //     };
+        //     var claims = {};
+        //     var jwtAPI = new sn_auth.GlideJWTAPI();
+		// 	var jwtProviderSysId = "<<Insert jwt provider sys id here>>";
+        //     var jwtToken = jwtAPI.generateJWT(jwtProviderSysId, JSON.stringify(header), JSON.stringify(claims));
+        //     if (jwtToken) {
+        //         requestParamMap.remove('client_secret');
+        //         requestParamMap.remove('oauth_provider_id');
+        //         requestParamMap.put('client_assertion_type', 'urn:ietf:params:oauth:client-assertion-type:jwt-bearer');
+        //         requestParamMap.put('client_assertion', jwtToken);
+        //     } else {
+        //         var msg = 'JWT Token is not valid. Please make sure standard claims are valid.';
+        //         gs.error(msg);
+        //     }
+        // } catch (e) {
+        //     throw new Error('ERROR: ' + JSON.stringify(e));
+        // }
+        // this.preprocessAccessToken(requestParamMap);
+    },
+
+    parseTokenResponse: function(accessTokenResponse) {
+        this.postprocessAccessToken(accessTokenResponse);
+    },
+
+    preprocessAuthCode: function(requestParamMap) {},
+
+    preprocessAccessToken: function(requestParamMap) {},
+
+    postprocessAccessToken: function(accessTokenResponse) {
+        var contentType = accessTokenResponse.getContentType();
+        if (contentType && contentType.indexOf('application/json') != -1) {
+            var tokenResponse = (new global.JSON()).decode(accessTokenResponse.getBody());
+            var paramMap = accessTokenResponse.getparameters();
+            for (param in tokenResponse)
+                paramMap.put(param, tokenResponse[param].toString());
+        }
+    },
+
+    type: 'MicrosoftTokenHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:54:53</sys_created_on>
+        <sys_id>834f34c2936f42107ea47fbcebba1047</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>MicrosoftTokenHandler</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sys_script_include_834f34c2936f42107ea47fbcebba1047</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:56:06</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>sys_script_include_834f34c2936f42107ea47fbcebba1047</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1105087_loaner_r.MicrosoftTokenHandler&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MicrosoftTokenHandler&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var MicrosoftTokenHandler = Class.create();
+MicrosoftTokenHandler.prototype = {
+    initialize: function() {
+    },
+	
+    interceptRequestParameters: function(requestParamMap) {
+        // try {
+        //     // Build here
+        //     requestParamMap.Put(token);
+
+        //     // Orig
+		// 	var thumbPrint = "&lt;&lt;Insert thumbprint here&gt;&gt;";
+        //     var header = {
+        //         "x5t": thumbPrint
+        //     };
+        //     var claims = {};
+        //     var jwtAPI = new sn_auth.GlideJWTAPI();
+		// 	var jwtProviderSysId = "&lt;&lt;Insert jwt provider sys id here&gt;&gt;";
+        //     var jwtToken = jwtAPI.generateJWT(jwtProviderSysId, JSON.stringify(header), JSON.stringify(claims));
+        //     if (jwtToken) {
+        //         requestParamMap.remove('client_secret');
+        //         requestParamMap.remove('oauth_provider_id');
+        //         requestParamMap.put('client_assertion_type', 'urn:ietf:params:oauth:client-assertion-type:jwt-bearer');
+        //         requestParamMap.put('client_assertion', jwtToken);
+        //     } else {
+        //         var msg = 'JWT Token is not valid. Please make sure standard claims are valid.';
+        //         gs.error(msg);
+        //     }
+        // } catch (e) {
+        //     throw new Error('ERROR: ' + JSON.stringify(e));
+        // }
+        // this.preprocessAccessToken(requestParamMap);
+    },
+
+    parseTokenResponse: function(accessTokenResponse) {
+        this.postprocessAccessToken(accessTokenResponse);
+    },
+
+    preprocessAuthCode: function(requestParamMap) {},
+
+    preprocessAccessToken: function(requestParamMap) {},
+
+    postprocessAccessToken: function(accessTokenResponse) {
+        var contentType = accessTokenResponse.getContentType();
+        if (contentType &amp;&amp; contentType.indexOf('application/json') != -1) {
+            var tokenResponse = (new global.JSON()).decode(accessTokenResponse.getBody());
+            var paramMap = accessTokenResponse.getparameters();
+            for (param in tokenResponse)
+                paramMap.put(param, tokenResponse[param].toString());
+        }
+    },
+
+    type: 'MicrosoftTokenHandler'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-23 13:54:53&lt;/sys_created_on&gt;&lt;sys_id&gt;834f34c2936f42107ea47fbcebba1047&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;MicrosoftTokenHandler&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Request" source="x_1105087_loaner_r"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Loaner Request"&gt;98b3807d93e302107ea47fbcebba1094&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_834f34c2936f42107ea47fbcebba1047&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-23 13:56:06&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-525143867</payload_hash>
+        <record_name>MicrosoftTokenHandler</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:56:06</sys_created_on>
+        <sys_id>61408506936f42107ea47fbcebba10d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190dfe0c0270000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:56:06</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>29408506136f4210f5b6245a0f20cad4</update_guid>
+        <update_guid_history>29408506136f4210f5b6245a0f20cad4:-525143867,6bff74c2296f4210a335b9b40fec157c:359602218</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:58:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>84ece7a84f1c4c509760632f18aaf141</sys_id>
+        <sys_metadata>834f34c2936f42107ea47fbcebba1047</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MicrosoftTokenHandler</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>sys_script_include_834f34c2936f42107ea47fbcebba1047</sys_update_name>
+        <sys_update_version display_value="sys_script_include_834f34c2936f42107ea47fbcebba1047">61408506936f42107ea47fbcebba10d5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:58:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

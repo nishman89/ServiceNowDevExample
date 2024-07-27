@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile">
+    <oauth_entity_profile action="DELETE">
+        <default>true</default>
+        <grant_type>password</grant_type>
+        <jwt_provider/>
+        <name>Microsoft - Gardark default_profile</name>
+        <oauth_entity display_value="Microsoft - Gardark">20024c86932b42107ea47fbcebba1070</oauth_entity>
+        <saml2_assertion_producer/>
+        <sys_class_name>oauth_entity_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:26:34</sys_created_on>
+        <sys_id>d9920c8e93e742107ea47fbcebba10f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft - Gardark default_profile</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>oauth_entity_profile_d9920c8e93e742107ea47fbcebba10f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:26:34</sys_updated_on>
+    </oauth_entity_profile>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>oauth_entity_profile_d9920c8e93e742107ea47fbcebba10f5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile"><oauth_entity_profile action="INSERT_OR_UPDATE"><default>true</default><grant_type>password</grant_type><jwt_provider/><name>Microsoft - Gardark default_profile</name><oauth_entity display_value="Microsoft - Gardark">20024c86932b42107ea47fbcebba1070</oauth_entity><saml2_assertion_producer/><sys_class_name>oauth_entity_profile</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-23 09:26:34</sys_created_on><sys_id>d9920c8e93e742107ea47fbcebba10f5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Microsoft - Gardark default_profile</sys_name><sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package><sys_policy/><sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope><sys_update_name>oauth_entity_profile_d9920c8e93e742107ea47fbcebba10f5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-23 09:26:34</sys_updated_on></oauth_entity_profile></record_update>]]></payload>
+        <payload_hash>-440150318</payload_hash>
+        <record_name>Microsoft - Gardark default_profile</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:26:34</sys_created_on>
+        <sys_id>95920c8e93e742107ea47fbcebba10f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190dee9fc340000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:26:34</sys_updated_on>
+        <type>OAuth Entity Profile</type>
+        <update_guid>99920c8ebce7421043f64051278359f7</update_guid>
+        <update_guid_history>99920c8ebce7421043f64051278359f7:-440150318</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Microsoft - Gardark default_profile">3f07c04e932b42107ea47fbcebba102c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:46:08</sys_created_on>
+        <sys_db_object display_value="" name="oauth_entity_profile">oauth_entity_profile</sys_db_object>
+        <sys_id>a8a13cb453384e60b8bcb6f138a18400</sys_id>
+        <sys_metadata>d9920c8e93e742107ea47fbcebba10f5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft - Gardark default_profile</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>oauth_entity_profile_d9920c8e93e742107ea47fbcebba10f5</sys_update_name>
+        <sys_update_version display_value="oauth_entity_profile_d9920c8e93e742107ea47fbcebba10f5">95920c8e93e742107ea47fbcebba10f8</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 09:46:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

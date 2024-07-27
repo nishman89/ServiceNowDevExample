@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth2/v2.0/authorize</auth_url>
+        <certificate_url/>
+        <client_id>1173dfa2-f7ef-42c7-9013-5993948c5d17</client_id>
+        <client_secret>﷞﷟﷒52f82365936702107ea47fbcebba1051﷬﷔1﷬﷭E0RHDyOdCSuWDGfPGq51NA==vkOM7ksX5PsudvZBUxiprjn9nM9iK4ub-nTl8se2OVM7TAcPV63GFNRLOq1gQAFiqYAcRypHqoQ=﷮﷯</client_secret>
+        <client_uuid>ac024c86932b42107ea47fbcebba106f</client_uuid>
+        <code_challenge_method>S256</code_challenge_method>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <jwt_provider/>
+        <login_url/>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <mobile_client>false</mobile_client>
+        <name>Microsoft</name>
+        <oauth_api_script/>
+        <protocol_name/>
+        <public_client>false</public_client>
+        <redirect_url>https://dev267492.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>3599</refresh_token_lifespan>
+        <refresh_token_url/>
+        <restricted_binding>false</restricted_binding>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <send_client_credentials_as>request_body_parameter</send_client_credentials_as>
+        <skip_authorize>false</skip_authorize>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 09:26:34</sys_created_on>
+        <sys_id>20024c86932b42107ea47fbcebba1070</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Microsoft</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>oauth_entity_20024c86932b42107ea47fbcebba1070</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 14:45:09</sys_updated_on>
+        <token_url>https://login.microsoftonline.com/b7cf1dfe-2f03-4229-a52f-98db8fedb341/oauth2/v2.0/token</token_url>
+        <type>oauth_provider</type>
+        <use_mutual_auth>false</use_mutual_auth>
+        <user/>
+    </oauth_entity>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers">
+    <sys_rest_message_headers action="DELETE">
+        <name>Authorization</name>
+        <rest_message display_value="GraphApi">3bf4488a932b42107ea47fbcebba1091</rest_message>
+        <sys_class_name>sys_rest_message_headers</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:29:11</sys_created_on>
+        <sys_id>0bf9f40e932f42107ea47fbcebba106a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_update_name>sys_rest_message_headers_0bf9f40e932f42107ea47fbcebba106a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:49:08</sys_updated_on>
+        <value>Bearer: ${token}</value>
+    </sys_rest_message_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</application>
+        <file_path/>
+        <instance_id>ec3467561bc6ce5477c7cb7b234bcb42</instance_id>
+        <instance_name>dev267492</instance_name>
+        <name>sys_rest_message_headers_0bf9f40e932f42107ea47fbcebba106a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_headers"><sys_rest_message_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message display_value="GraphApi">3bf4488a932b42107ea47fbcebba1091</rest_message><sys_class_name>sys_rest_message_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-07-23 13:29:11</sys_created_on><sys_id>0bf9f40e932f42107ea47fbcebba106a</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package><sys_policy/><sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope><sys_update_name>sys_rest_message_headers_0bf9f40e932f42107ea47fbcebba106a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-07-23 13:49:08</sys_updated_on><value>Bearer: ${token}</value></sys_rest_message_headers></record_update>]]></payload>
+        <payload_hash>224373355</payload_hash>
+        <record_name>Authorization</record_name>
+        <reverted_from/>
+        <source>d8b3807d93e302107ea47fbcebba1098</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 13:49:08</sys_created_on>
+        <sys_id>6baeb8ce932f42107ea47fbcebba10f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190dfda5fbe0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 13:49:08</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>23aeb8ce922f4210b1e03dc8ab4556f0</update_guid>
+        <update_guid_history>23aeb8ce922f4210b1e03dc8ab4556f0:224373355,c55c7c8e802f42109477d7d2440196cc:222635570,845a780e382f421052621766a2de416e:1787021378,931ab80e972f4210ee87a6dd2f8f701e:2081307437</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-23 15:07:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_headers">sys_rest_message_headers</sys_db_object>
+        <sys_id>6d60e3d654524ad6ace7592e5545e5a4</sys_id>
+        <sys_metadata>0bf9f40e932f42107ea47fbcebba106a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="Loaner Request" source="x_1105087_loaner_r">98b3807d93e302107ea47fbcebba1094</sys_package>
+        <sys_parent display_value="GraphApi">3bf4488a932b42107ea47fbcebba1091</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">98b3807d93e302107ea47fbcebba1094</sys_scope>
+        <sys_scope_delete display_value="">dae3c9dc8b4e40fcb22e1a8a823f1990</sys_scope_delete>
+        <sys_update_name>sys_rest_message_headers_0bf9f40e932f42107ea47fbcebba106a</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_headers_0bf9f40e932f42107ea47fbcebba106a">6baeb8ce932f42107ea47fbcebba10f0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-23 15:07:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
